@@ -1,4 +1,4 @@
-#VolksCarputer (VWCP)
+# VolksCarputer (VWCP)
 
 "The People's Carputer"
 
@@ -17,3 +17,5 @@ This project is designed for my own car but could (with probably some modificati
 Uses OpenAuto (https://github.com/f1xpl/openauto)
 
 Uses gtkmm (https://www.gtkmm.org)
+
+Current Version: V0.1
