@@ -1,0 +1,14 @@
+VWCP: VolksCarputer
+
+"The People's Carputer"
+=======================
+
+A Raspberry Pi car computer/home-built car infotainment project.
+
+Minus a lot of detail, the idea is to have a touch screen LCD display mounted
+on the dash of the car or somewhere else, connected to a RPI 3 running the software.
+OpenAuto will be used, allowing an Android phone to be plugged in and the display will
+show an Android Auto UI complete with Google Maps, music, etc.
+A UI will be built from scratch with a splash screen leading to a dashboard. The dashboard
+will display various stats, app icon buttons which point to other programs, a home-made music
+dashboard/player, and an icon button pointing to the OpenAuto program.

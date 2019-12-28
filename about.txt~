@@ -1,0 +1,12 @@
+VWCP: VolksComputer
+===================
+
+A Raspberry Pi car computer project.
+
+Minus a lot of detail, the idea is to have a touch screen LCD display mounted
+on the dash of the car or somewhere else, connected to a RPI 3 running the software.
+A UI will be built from scratch (mostly), with 25% of the screen used for vehicle
+stats, such as speed indicator, turn signal indicators, etc. The other 75% will be
+used for other applications, such as a GPS. Obviously inspired by Tesla's software and
+UIs.
+
