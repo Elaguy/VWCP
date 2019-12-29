@@ -5,7 +5,7 @@ using namespace std;
 
 StartUI::StartUI()
     : mainBox(Gtk::ORIENTATION_VERTICAL),
-      bkgd("img/bkgd.jpg")
+      bkgd("img/bkgd_cropped.jpg")
 {
     basicSetup();
     addMainWidgets();
@@ -24,28 +24,27 @@ void StartUI::basicSetup() {
 }
 
 void StartUI::addMainWidgets() {
-    mainLayout.set_size(800, 480);
-
-    add(mainLayout);
-    
     topbar.set_name("topbar");
     topbar.set_size_request(800, 48);
     
-    body.set_name("body");
-    body.set_size_request(800, 432);
+    bodyBox.set_name("bodyBox");
+    bodyBox.set_size_request(800, 432);
     
     setCSS(topbar, "startUIStyle.css");
-    setCSS(body, "startUIStyle.css");
+    setCSS(bodyBox, "startUIStyle.css");
 
     mainBox.pack_start(topbar);
-    mainBox.pack_start(body);
+    mainBox.pack_start(bodyBox);
 
-    mainLayout.add(mainBox);
-    
+    mainOverlay.add(bkgd);
+    mainOverlay.add_overlay(mainBox);
+    add(mainOverlay);
+
+    bkgd.show();
     topbar.show();
-    body.show();
+    bodyBox.show();
     mainBox.show();
-    mainLayout.show();
+    mainOverlay.show();
 }
 
 // associates the css file pointed to by 'filename' with the given 'widget'

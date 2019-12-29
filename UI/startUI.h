@@ -12,7 +12,8 @@
 #include <gtkmm/stylecontext.h>
 #include <gtkmm/cssprovider.h>
 #include <gtkmm/image.h>
-#include <gtkmm/layout.h>
+#include <gtkmm/overlay.h>
+#include <gtkmm/scrolledwindow.h>
 
 class StartUI : public Gtk::ApplicationWindow {
  public:
@@ -27,11 +28,11 @@ class StartUI : public Gtk::ApplicationWindow {
     // signal handlers:
     
     // member widgets:
-    Gtk::Layout mainLayout;
+    Gtk::Overlay mainOverlay;
     Gtk::Box mainBox;
-    Gtk::Image bkgd;
     Gtk::Toolbar topbar;
-    Gtk::Layout body;
+    Gtk::Box bodyBox;
+    Gtk::Image bkgd;
 };
 
 #endif
