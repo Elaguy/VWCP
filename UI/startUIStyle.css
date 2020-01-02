@@ -2,6 +2,54 @@
     background-color: rgba(59, 62, 63, 0.87);
 }
 
-#bodyBox {
+#vwcpLabel {
+    font-family: Sans;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+#dateLabel {
+    font-family: Sans;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+#bodyContainer {
     background-color: rgba(116, 120, 124, 0.65);
+}
+
+#body {
+    background-color: rgba(116, 120, 124, 0.65);
+}
+
+#greetingLabel {
+    font-family: "Louis George Café";
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#timeLabel {
+    font-family: "Louis George Café";
+    font-size: 66px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#driveButton {
+    background-image: linear-gradient(rgb(255, 128, 0), rgb(255, 191, 0));
+    border-radius: 12px;
+    border-color: black;
+}
+
+#driveButtonLabel {
+    font-family: "Louis George Café";
+    font-size: 26px;
+}
+
+#warningLabel {
+    font-family: Sans;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
