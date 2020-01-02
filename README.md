@@ -2,6 +2,8 @@
 
 "The People's Carputer"
 
+![Screenshot](https://raw.githubusercontent.com/Elaguy/VWCP/master/UI/img/exampleImg.png)
+
 The VolksCarputer (VWCP), a Raspberry Pi Carputer (Head Unit/Infotainment) project for my Volkswagen car.
 
 Minus a lot of detail, the idea is to have a touch screen LCD display mounted
