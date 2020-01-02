@@ -18,4 +18,4 @@ Uses OpenAuto (https://github.com/f1xpl/openauto)
 
 Uses gtkmm (https://www.gtkmm.org)
 
-Current Version: V0.1
+Current Version: V0.5
