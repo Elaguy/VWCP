@@ -14,7 +14,8 @@ A UI will be built from scratch with a splash screen leading to a dashboard. The
 will display various stats, app icon buttons which point to other programs, a homemade music
 dashboard/player, and an icon button pointing to the OpenAuto program.
 
-This project is designed for my own car but could (with probably some modification) be adapted for other vehicles.
+This project is designed for my own car and for use with the official Raspberry Pi Touch Display but
+could (with possibly some modification) be adapted for other vehicles.
 
 Uses OpenAuto (https://github.com/f1xpl/openauto)
 
