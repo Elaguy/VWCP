@@ -20,4 +20,4 @@ Uses OpenAuto (https://github.com/f1xpl/openauto)
 
 Uses GTK3 and gtkmm (https://www.gtkmm.org)
 
-Current Version: V0.5
+Current Version: V0.5.1
