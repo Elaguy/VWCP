@@ -33,6 +33,7 @@ class StartUI : public Gtk::ApplicationWindow {
     // overrides:
     
     // signal handlers:
+    void onDriveButtonClicked();
     
     // member widgets:
     Gtk::Overlay mainOverlay;

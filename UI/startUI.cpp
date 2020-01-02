@@ -63,7 +63,7 @@ void StartUI::addMainWidgets() {
     bodyContainer.set_size_request(APP_WIDTH, APP_HEIGHT * 0.90);
     
     body.set_name("body");
-    //body.set_size_request(APP_WIDTH, APP_HEIGHT * 0.90);
+    body.set_size_request(APP_WIDTH, APP_HEIGHT * 0.90);
     body.set_halign(Gtk::Align::ALIGN_CENTER);
     body.set_valign(Gtk::Align::ALIGN_CENTER);
     body.set_spacing(APP_HEIGHT * 0.10);
@@ -81,6 +81,8 @@ void StartUI::addMainWidgets() {
     driveButton.set_valign(Gtk::Align::ALIGN_START);
     driveButton.get_child()->set_name("driveButtonLabel");
     driveButton.set_size_request(208, 42);
+    driveButton.signal_clicked().connect(sigc::mem_fun(*this,
+						       &StartUI::onDriveButtonClicked));
     //driveButton.set_padding();
 
     warningBox.set_name("warningBox");
@@ -117,7 +119,7 @@ void StartUI::addMainWidgets() {
     
     mainBox.pack_start(topbar);
     mainBox.pack_start(bodyContainer);
-
+    
     mainOverlay.add(bkgd);
     mainOverlay.add_overlay(mainBox);
     add(mainOverlay);
@@ -146,4 +148,8 @@ void StartUI::setCSS(const Gtk::Widget& widget, const Glib::ustring& filename) {
     cssProvider->load_from_path(filename);
     styleContext->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_USER);
     styleContext->context_save();
+}
+
+void StartUI::onDriveButtonClicked() {
+    cout << "driveButton clicked! [TEST]" << endl;
 }
