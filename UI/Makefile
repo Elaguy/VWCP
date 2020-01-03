@@ -1,5 +1,5 @@
 compile: main.cpp startUI.cpp startUI.h
-	g++ -o startUI startUI.cpp main.cpp -std=c++11 -g `pkg-config gtkmm-3.0 --cflags --libs`
+	g++ -o startUI *.cpp -std=c++11 -g `pkg-config gtkmm-3.0 --cflags --libs`
 
 run: startUI
 	./startUI

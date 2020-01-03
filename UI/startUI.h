@@ -16,6 +16,8 @@
 #include <gtkmm/scrolledwindow.h>
 #include <gtkmm/label.h>
 #include <gtkmm/button.h>
+#include <glibmm/main.h>
+#include <ctime>
 
 class StartUI : public Gtk::ApplicationWindow {
  public:
@@ -33,7 +35,8 @@ class StartUI : public Gtk::ApplicationWindow {
     // overrides:
     
     // signal handlers:
-    void onDriveButtonClicked();
+    void runOpenAuto();
+    bool updateValues();
     
     // member widgets:
     Gtk::Overlay mainOverlay;

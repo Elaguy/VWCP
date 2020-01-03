@@ -44,6 +44,8 @@ void StartUI::basicSetup() {
     set_resizable(false);
 
     //fullscreen();
+
+    Glib::signal_timeout().connect(sigc::mem_fun(*this, &StartUI::updateValues), 1000);
 }
 
 void StartUI::addMainWidgets() {
@@ -82,7 +84,7 @@ void StartUI::addMainWidgets() {
     driveButton.get_child()->set_name("driveButtonLabel");
     driveButton.set_size_request(208, 42);
     driveButton.signal_clicked().connect(sigc::mem_fun(*this,
-						       &StartUI::onDriveButtonClicked));
+						       &StartUI::runOpenAuto));
     //driveButton.set_padding();
 
     warningBox.set_name("warningBox");
@@ -150,6 +152,12 @@ void StartUI::setCSS(const Gtk::Widget& widget, const Glib::ustring& filename) {
     styleContext->context_save();
 }
 
-void StartUI::onDriveButtonClicked() {
-    cout << "driveButton clicked! [TEST]" << endl;
+void StartUI::runOpenAuto() {
+    cout << "Running OpenAuto! [TEST]" << endl;
+}
+
+bool StartUI::updateValues() {
+    cout << "Updating values! [TEST]" << endl;
+
+    return true;
 }
